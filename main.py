@@ -105,6 +105,7 @@ def scrapeUrl2():
         r = session.get("https://www.bbcgoodfood.com/") .text
         soup0 = BeautifulSoup(r, 'lxml')
     except (ConnectionError, ProtocolError):
+        print("Connection Error")
         pass
 
     else:
